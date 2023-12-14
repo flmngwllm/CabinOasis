@@ -26,6 +26,7 @@ const StyledFormRow = styled.div`
     gap: 1.2rem;
   }
 `;
+
 const Label = styled.label`
   font-weight: 500;
 `;
@@ -38,7 +39,7 @@ const Error = styled.span`
 function FormRow({ label, error, children }) {
   return (
     <StyledFormRow>
-      {label && <Label htmlFor={children.props?.id}>{label}</Label>}
+      {label && <Label htmlFor={children.props.id}>{label}</Label>}
       {children}
       {error && <Error>{error}</Error>}
     </StyledFormRow>

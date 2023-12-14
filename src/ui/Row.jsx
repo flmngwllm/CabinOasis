@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 const Row = styled.div`
   display: flex;
+
   ${(props) =>
     props.type === "horizontal" &&
     css`
@@ -20,4 +21,5 @@ const Row = styled.div`
 Row.defaultProps = {
   type: "vertical",
 };
+
 export default Row;
